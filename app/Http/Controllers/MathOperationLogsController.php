@@ -23,15 +23,18 @@ class MathOperationLogsController extends Controller
             $result = $this->calc(null, $operation_array);
             $random_number = rand();
             $bonus = $random_number === $result ? true : false;
+            
+            if (is_numeric($result)){
+                $math_operation_log = MathOperationLog::factory()->create([
+                    'ip' => $request->ip(),
+                    'operation' => $request->display,
+                    'result' => $result,
+                    'bonus' => $bonus
+                ]);
+            }
         }
         
 
-        $math_operation_log = MathOperationLog::factory()->create([
-            'ip' => $request->ip(),
-            'operation' => $request->display,
-            'result' => $result,
-            'bonus' => $bonus
-        ]);
         
         
         return response()->json([

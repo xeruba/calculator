@@ -32,6 +32,14 @@ docker run --rm \
 ./vendor/bin/sail npm run dev
 ```
 
+Open your browser and go to http://localhost
+
+## Interface
+![Interface](https://drive.google.com/uc?id=1brNr5SDOcP74zydxSYtnb0ckRYqX1fqG)
+
+## Database
+Just an example of how the data are stored on the database.
+![database](https://drive.google.com/uc?id=1587kCO8Y_y-kQq7p3eX3MzbTdMlddosn)
 
 ## License
 
