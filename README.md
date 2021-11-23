@@ -2,6 +2,10 @@
 
 Simple calculator build with Laravel and ReactJs
 
+## Prerequisites
+
+Ensure that [Docker is installed](https://docs.docker.com/get-started/) and up to date on your system. Once installed, configure with your required preferences and ensure it is running.
+
 ## Installation
 
 ```sh
