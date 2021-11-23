@@ -7,19 +7,7 @@ Simple calculator build with Laravel and ReactJs
 ```sh
 git clone https://github.com/xeruba/calculator.git calculator
 cd calculator
-```
-Go to the root folder and create your .env file using the .env.sample file.
-If necessary, edit the DB_* variables:
-| VARIABLES |
-| ------ |
-|DB_CONNECTION=mysql|
-|DB_HOST=127.0.0.1|
-|DB_PORT=3306|
-|DB_DATABASE=calculator|
-|DB_USERNAME=sail|
-|DB_PASSWORD=pass|
-
-```sh
+mv .env.example .env
 docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v $(pwd):/var/www/html \
