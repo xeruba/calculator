@@ -26,12 +26,12 @@ class MathOperationLogsController extends Controller
         }
         
 
-        $math_operation_log = MathOperationLog::factory()->create(
-            [
-                'operation' => $request->display,
-                'result' => $result,
-                'bonus' => $bonus
-            ]);
+        $math_operation_log = MathOperationLog::factory()->create([
+            'ip' => $request->ip(),
+            'operation' => $request->display,
+            'result' => $result,
+            'bonus' => $bonus
+        ]);
         
         
         return response()->json([
