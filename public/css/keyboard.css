@@ -1,0 +1,32 @@
+/* Keyboard style */
+.btn {
+  border-radius: 4px;
+  padding: 15px;
+  margin: 5px 2px;
+}
+
+.btn-number {
+  background-color: #3c4043;
+  color: #e8eaed;
+  border: 1px solid #3c4043;
+}
+
+.btn-operator {
+  background-color: #5f6368;
+  color: #e8eaed;
+  border: 1px solid #5f6368;
+  box-sizing: border-box;
+}
+
+.btn-equals {
+  background-color: #8ab4f8;
+  color: #202124;
+  border: 1px solid #8ab4f8;
+  min-width: 70px;
+}
+
+.btn-reset {
+  background-color: #5f6368;
+  color: #e8eaed;
+  border: 1px solid #5f6368;
+}
